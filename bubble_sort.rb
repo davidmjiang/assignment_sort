@@ -13,7 +13,7 @@ def bubble_sort(array)
     break if sorted
     counter += 1
   end
-  puts array
+  array
 
 end
 

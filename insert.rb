@@ -22,7 +22,7 @@ def insertion_sort(array)
         insert(array, counter, array[counter+1])
         counter += 1
     end
-    puts array
+    array
 end
 
 insertion_sort( [1,3,7,2,5] )

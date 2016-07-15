@@ -13,7 +13,6 @@ def merge_sort(array)
     # // return the merged array
 end
 
-
 def merge(leftArr, rightArr)
 
     # // var newArr = [];
