@@ -18,11 +18,18 @@ def benchmark(array, sort)
   (time2 - time1)
 end
 
-def rand_num(numbers)
 
+#small array: merge sort is slowest
 puts benchmark([1,3,7,2,5], "insertion_sort")
 puts benchmark([1,3,7,2,5], "bubble_sort")
 puts benchmark([1,3,7,2,5], "merge_sort")
-puts benchmark([1,6,3,78,4,6,23,67,98,2,5,7,89,3,56,3,6], "insertion_sort")
-puts benchmark([1,6,3,78,4,6,23,67,98,2,5,7,89,3,56,3,6], "bubble_sort")
-puts benchmark([1,6,3,78,4,6,23,67,98,2,5,7,89,3,56,3,6], "merge_sort")
+
+
+large_array=[]
+1000.times do
+  large_array << rand(1..100)
+end
+
+puts benchmark(large_array, "insertion_sort")
+puts benchmark(large_array, "bubble_sort")
+puts benchmark(large_array, "merge_sort")
